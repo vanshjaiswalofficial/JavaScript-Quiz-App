@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+.body, body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: #f3f4f6; color: #111827; }
+.app-header { background: linear-gradient(90deg,#ff8a00,#e7710a); padding: 28px 16px; text-align: center; }
+.title { margin: 0; color: #fff; font-size: 45px; font-weight: 800; letter-spacing: 0.3px; }
+.container { max-width: 760px; margin: 0 auto; padding: 24px 16px; width: 100%; flex: 1; display: flex; align-items: center; justify-content: center; }
+.quiz-card { background: #fff; border-radius: 12px; box-shadow: 0 6px 20px rgba(15,23,42,0.06); padding: 22px; width: 720px; max-width: 100%; height: auto; min-height: 380px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0px 2px 2px rgb(130, 127, 127);}
+.meta { color: #6b7280; font-size: 14px; margin-bottom: 8px; }
+.question { margin: 6px 0 12px; font-size: 22px; line-height: 1.2; }
+.options { display: grid; gap: 10px; }
+.option-btn { background: #f9fafb; border: 1px solid #e5e7eb; padding: 14px 16px; text-align: left; border-radius: 8px; cursor: pointer; font-size: 17px; transition: background .15s, border-color .15s; }
+.option-btn:hover { background: #fff; }
+.option-btn.correct { background: #e6ffed; border-color: #10b981; color: #065f46; }
+.option-btn.wrong { background: #ffeded; border-color: #ef4444; color: #7f1d1d; }
+.option-btn.disabled { cursor: default; opacity: 0.9; }
+.controls { margin-top: 18px; display: flex; justify-content: flex-end; }
+.btn { background: #111827; color: #fff; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; font-size: 15px; }
+.btn[disabled], .btn.disabled { opacity: 0.5; cursor: default; }
+.next { background: #2563eb; }
+.result { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 6px 20px rgba(15,23,42,0.06); text-align: center; }
+.hidden { display: none; }
+.app-footer { text-align: center; padding: 14px 8px; color: #6b7280; font-size: 14px; }
+
+/* Responsive */
+@media (max-width: 520px) {
+  .title { font-size: 22px; }
+  .quiz-card { padding: 16px; height: auto; min-height: 420px; }
+  .question { font-size: 20px; }
+  .option-btn { font-size: 16px; padding: 12px 14px; }
+}

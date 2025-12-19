@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="title">Quiz app</h1>
+  </header>
+
+  <main class="container">
+    <div class="quiz-card">
+      <div class="meta">Question <span id="current">1</span> / <span id="total">5</span></div>
+      <h2 id="question" class="question"></h2>
+
+      <div id="options" class="options"></div>
+
+      <div class="controls">
+        <button id="nextBtn" class="btn next" disabled>Next</button>
+      </div>
+    </div>
+
+    <div id="result" class="result hidden">
+      <h2>Your Score</h2>
+      <p id="scoreText"></p>
+      <button id="restartBtn" class="btn">Restart Quiz</button>
+    </div>
+  </main>
+
+  <footer class="app-footer">© All rights reserved by Vansh Jaiswal</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
